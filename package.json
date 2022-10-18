@@ -35,5 +35,11 @@
   },
   "browser": {
     "handlebars": "handlebars/runtime"
-  }
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "server",
+    "shared"
+  ]
 }
