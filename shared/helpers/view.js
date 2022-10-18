@@ -42,7 +42,7 @@ module.exports = function (Handlebars) {
 function getServerHtml(viewName, viewOptions, parentView) {
   var ViewClass, view;
 
-  if (!BaseView) { BaseView = require('rendr/shared/base/view'); }
+  if (!BaseView) { BaseView = require('@change/rendr/shared/base/view'); }
 
   // Pass through a reference to the parent view.
   if (parentView) { viewOptions.parentView = parentView; }
@@ -56,7 +56,7 @@ function getServerHtml(viewName, viewOptions, parentView) {
 }
 
 function getClientPlaceholder(viewName, viewOptions, Handlebars) {
-  if (!BaseView) { BaseView = require('rendr/shared/base/view'); }
+  if (!BaseView) { BaseView = require('@change/rendr/shared/base/view'); }
   var fetchSummary;
 
   // Builds a fetch_summary attribute

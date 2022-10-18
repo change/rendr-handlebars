@@ -16,7 +16,7 @@ var Handlebars = require('handlebars').create(),
       })
     },
     subject = proxyquire('../../../shared/helpers/view', {
-      'rendr/shared/base/view': BaseViewStub
+      '@change/rendr/shared/base/view': BaseViewStub
     })(Handlebars);
 
 function ViewClass() {}
